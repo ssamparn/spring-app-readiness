@@ -23,10 +23,10 @@ public class ToDoItemEntity {
     @Column(name = "TODO_ITEM_ID")
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "TODO_ITEM_NAME", nullable = false)
     private String item;
 
-    @Column(nullable = false)
+    @Column(name = "TODO_ITEM_COMPLETE", nullable = false)
     private boolean complete;
 
     @ManyToOne

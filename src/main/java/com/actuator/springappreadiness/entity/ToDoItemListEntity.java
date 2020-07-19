@@ -27,7 +27,7 @@ public class ToDoItemListEntity {
     @Column(name = "TODO_LIST_ID")
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "TODO_LIST_NAME", nullable = false)
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
