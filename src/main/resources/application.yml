@@ -28,7 +28,10 @@ management:
   endpoints:
     web:
       exposure:
-        include: beans, metrics, info, health, loggers
+        include: beans, metrics, info, health, loggers, readiness
   endpoint:
-    loggers:
-      enabled: false
+    health:
+      show-details: always
+#  endpoint:
+#    loggers:
+#      enabled: false
